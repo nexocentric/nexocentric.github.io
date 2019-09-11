@@ -30,3 +30,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 #browsersync integration
 gem 'jekyll-browsersync', group: [:jekyll_plugins]
+
+#cloudinary integration
+gem 'cloudinary'
