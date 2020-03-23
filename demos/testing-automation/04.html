@@ -24,8 +24,8 @@
 			<div class="column">
 				<div class="select">
 					<select>
-					<option></option>
-					<option>You could say that.</option>
+					<option id="say-that-blank"></option>
+					<option id="say-that">You could say that.</option>
 					</select>
 				</div>
 			</div>
@@ -47,8 +47,8 @@
 			<div class="column">
 				<div class="select">
 					<select>
-					<option></option>
-					<option>No.</option>
+					<option id="no-blank"></option>
+					<option id="no">No.</option>
 					</select>
 				</div>
 			</div>
@@ -57,21 +57,21 @@
 			</div>
 		</div>
 
-			<div class="row morpheus-row">
-				<div class="column morpheus-image">
-					<img src="https://i0.wp.com/www.theilluminerdi.com/wp-content/uploads/2019/12/Laurence-Fishburne-Morpheus-The-Matrix.jpg?resize=1280%2C640&ssl=1" alt="Picture of Morpheus">
-				</div>
-				<div class="column">
-					<p>Why not?</p>
-				</div>
+		<div class="row morpheus-row">
+			<div class="column morpheus-image">
+				<img src="https://i0.wp.com/www.theilluminerdi.com/wp-content/uploads/2019/12/Laurence-Fishburne-Morpheus-The-Matrix.jpg?resize=1280%2C640&ssl=1" alt="Picture of Morpheus">
 			</div>
+			<div class="column">
+				<p>Why not?</p>
+			</div>
+		</div>
 
 		<div class="row neo-row">
 			<div class="column">
 				<div class="select">
 					<select>
-					<option></option>
-					<option>Because I don't like the idea that I'm not in control of my automation.</option>
+					<option id="automation-blank"></option>
+					<option id="automation">Because I don't like the idea that I'm not in control of my automation.</option>
 					</select>
 				</div>
 			</div>
@@ -93,8 +93,8 @@
 			<div class="column">
 				<div class="select">
 					<select>
-					<option></option>
-					<option>The element selectors.</option>
+					<option id="selector-blank"></option>
+					<option id="element-selector">The element selectors.</option>
 					</select>
 				</div>
 			</div>
@@ -116,8 +116,8 @@
 			<div class="column">
 				<div class="select">
 					<select>
-					<option></option>
-					<option>Yes.</option>
+					<option id="yes-blank"></option>
+					<option id="yes">Yes.</option>
 					</select>
 				</div>
 			</div>
@@ -139,8 +139,8 @@
 			<div class="column">
 				<div class="select">
 					<select>
-					<option></option>
-					<option>What truth?</option>
+					<option id="truth-blank"></option>
+					<option id="truth">What truth?</option>
 					</select>
 				</div>
 			</div>
@@ -179,13 +179,13 @@
 			<div class="row choice-row">
 				<div class="column">
 					<label class="radio">
-						<input value="red" type="radio" name="pill">
+						<input id="red-pill" value="red" type="radio" name="pill">
 						Red Pill
 					</label>
 				</div>
 				<div class="column">
 					<label class="radio">
-						<input value="blue" type="radio" name="pill" checked>
+						<input id="blue-pill" value="blue" type="radio" name="pill" checked>
 						Blue Pill
 					</label>
 				</div>
@@ -195,13 +195,13 @@
 		<div class="row">
 			<div class="column has-content-centered">
 				<div class="control">
-					<button type="button" class="button is-link" onclick="showModal('success');">Decide</button>
+					<button id="decide" type="button" class="button is-link" onclick="showModal('success');">Decide</button>
 				</div>
 			</div>
 			
 			<div class="column has-content-centered">
 				<div class="control">
-					<button type="button" class="button is-link is-light" onclick="showModal('fail');">Rethink</button>
+					<button id="rethink" type="button" class="button is-link is-light" onclick="showModal('fail');">Rethink</button>
 				</div>
 			</div>
 		</div>
@@ -212,7 +212,7 @@
 		<div class="modal-content">
 			<img src="https://jasbaku.files.wordpress.com/2013/01/neo-bullets1.png">
 		</div>
-		<button class="modal-close is-large" aria-label="close" onclick="closeModal();"></button>
+		<button id="close-success" class="modal-close is-large" aria-label="close" onclick="closeModal();"></button>
 	</div>
 
 	<div id="fail-modal" class="modal">
@@ -220,7 +220,7 @@
 		<div class="modal-content">
 			<img src="https://thematrixminute.one/wp-content/uploads/2018/01/min94.jpg">
 		</div>
-		<button class="modal-close is-large" aria-label="close" onclick="closeModal();"></button>
+		<button id="close-fail" class="modal-close is-large" aria-label="close" onclick="closeModal();"></button>
 	</div>
 
 </body>
