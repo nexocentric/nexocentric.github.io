@@ -28,8 +28,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-#browsersync integration
-gem 'jekyll-browsersync', group: [:jekyll_plugins]
-
-#cloudinary integration
+#Nexocentric Studios Development Setup
 gem 'cloudinary'
+gem 'sassc' #for sass compilation
+gem 'jekyll-browsersync', group: [:jekyll_plugins] #live reloading
