@@ -126,7 +126,7 @@
     "lcid": "^1.0.0",
     "limiter": "^1.1.4",
     "load-json-file": "^1.1.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "lodash.isfinite": "^3.3.2",
     "map-cache": "^0.2.2",
     "map-visit": "^1.0.0",
