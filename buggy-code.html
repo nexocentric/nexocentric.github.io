@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buggy Code</title>
+</head>
+<body>
+    <div>
+        <h1>Buggy Code Debug</h1>
+    </div>
+
+    <div>
+        <p>Clicking the action button should generate a new list of numbers from the minimum range specified (inclusive) to the maximum range specified (inclusive) any time the button is clicked. It should anyway......</p>
+    </div>
+
+    <div>
+        <form action="javascript:void(0)">
+            <label for="m">From</label>
+            <input type="text" name="m">
+
+            <label for="ma">to</label>
+            <input type="text" name="ma">
+            <button onclick="r()">Generate</button>
+        </form>
+    </div>
+
+    <div id="generatorContainer">
+        
+    </div>
+
+    <script>
+        function r()
+        {
+            var min = document.getElementsByName("m")[0].value;
+            var max = document.getElementsByName("ma")[0].value;
+            
+            min = parseInt(min);
+            min = parseInt(max);
+            
+            console.log(min);
+            console.log(max);
+            
+            for (var i = min; i < max; i++)
+            {
+                var node = document.createElement("P");
+                var textnode = document.createTextNode(i);
+                node.appendChild(textnode);
+                document.getElementById("generatorContainer").appendChild(node);
+            }
+        }
+    </script>
+</body>
+</html>
