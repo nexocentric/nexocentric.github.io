@@ -242,7 +242,7 @@
     "ws": "^6.1.4",
     "xmlhttprequest-ssl": "^1.5.5",
     "y18n": "^3.2.1",
-    "yargs-parser": "^4.2.1",
+    "yargs-parser": "^13.1.2",
     "yeast": "^0.1.2"
   },
   "devDependencies": {
