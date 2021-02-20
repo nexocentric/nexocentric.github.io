@@ -195,7 +195,7 @@
     "send": "^0.16.2",
     "server-destroy": "^1.0.1",
     "set-blocking": "^2.0.0",
-    "set-value": "^2.0.0",
+    "set-value": "^2.0.1",
     "setprototypeof": "^1.1.0",
     "snapdragon": "^0.8.2",
     "snapdragon-node": "^2.1.1",
