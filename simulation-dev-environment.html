@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="name-viewport" content="width=device-width, initial-scale=1.0">
+
+		<script type="text/javascript" src="sample-page.js"> </script>
+
+		<title>Automation for Sites</title>
+	</head>
+	<body>
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x">
+		<div class="large-12 cell">
+			<h1>Welcome to Automation</h1>
+		</div>
+		</div>
+
+		<div class="grid-x grid-padding-x">
+		<div class="large-12 cell">
+			<div class="callout">
+			<h3>We&rsquo;re stoked you want to try Automation!</h3>
+			<p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+			<p>Once you've exhausted the fun in this document, you should check out:</p>
+			<p>Sample <span id="fancily-formatted-text">text</span>.</p>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 medium-4 cell">
+				<p><a href="http://foundation.zurb.com/docs" class="new-link-test" data-test="link-in-tab-test-1" target="_blank">Automation Documentation</a><br />Everything you need to know about using the framework.</p>
+				</div>
+				<div class="large-4 medium-4 cell">
+				<p><a target="_blank" data-test="link-in-tab-test-2" class="new-link-test" href="http://zurb.com/university/code-skills">Automation Code Skills</a><br />These online courses offer you a chance to better understand how Automation works and how you can master it to create awesome projects.</p>
+				</div>
+				<div class="large-4 medium-4 cell">
+				<p><a href="http://foundation.zurb.com/forum">Automation Forum</a><br />Join the Automation community to ask a question or show off your knowledge.</p>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 medium-4 medium-push-2 cell">
+				<p><a href="http://github.com/zurb/foundation">Automation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+				</div>
+				<div class="large-4 medium-4 medium-pull-2 cell">
+				<p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="grid-x grid-padding-x">
+		<div class="large-8 medium-8 cell">
+			<h5>Here&rsquo;s your basic grid:</h5>
+
+			<div class="grid-x grid-padding-x">
+			<div class="large-12 cell">
+				<div class="primary callout">
+				<p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
+				</div>
+			</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+			<div class="large-6 medium-6 cell">
+				<div class="primary callout">
+				<p>Six cell</p>
+				</div>
+			</div>
+			<div class="large-6 medium-6 cell">
+				<div class="primary callout">
+				<p>Six cell</p>
+				</div>
+			</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+			<div class="large-4 medium-4 small-4 cell">
+				<div class="primary callout">
+				<p>Four cell</p>
+				</div>
+			</div>
+			<div class="large-4 medium-4 small-4 cell">
+				<div class="primary callout">
+				<p>Four cell</p>
+				</div>
+			</div>
+			<div class="large-4 medium-4 small-4 cell">
+				<div class="primary callout">
+				<p>Four cell</p>
+				</div>
+			</div>
+			</div>
+
+			<hr />
+
+			<h5>We bet you&rsquo;ll need a form somewhere:</h5>
+			<form id="id-main-form">
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">
+				<label>Username</label>
+				<input id="id-username" name="name-username" type="text" placeholder="large-12.cell" />
+				</div>
+
+				<button id="display-user" class="display-user" onclick="displayUser();" type="button">Display User</button><br/>
+				<div id="user-display-area"></div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-4 medium-4 cell">
+				<label>Password</label>
+				<input id="id-password" name="name-password" type="password" placeholder="large-4.cell" />
+				</div>
+				<div class="large-4 medium-4 cell">
+				<label>Full Name</label>
+				<input id="id-full-name" name="name-full-name" type="text" placeholder="large-4.cell" />
+				</div>
+				<div class="large-4 medium-4 cell">
+				<div class="grid-x">
+					<label>Webpage</label>
+					<div class="input-group">
+					<input id="id-webpage" name="name-webpage" type="text" placeholder="small-9.cell" class="input-group-field" />
+					<span class="input-group-label">.com</span>
+					</div>
+				</div>
+				<div class="grid-x">
+					<label>Prefilled</label>
+					<div class="input-group">
+						<input id="pre-filled-input-box" name="pre-filled-input-box" type="text" placeholder="small-9.cell" class="input-group-field" value="tinkerbell" />
+						<span class="input-group-label">.com</span>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">
+				<label>Select Box</label>
+				<select id="id-select-box">
+					<option value="husker" selected>Husker</option>
+					<option value="starbuck">Starbuck</option>
+					<option value="hotdog">Hot Dog</option>
+					<option value="apollo">Apollo</option>
+				</select>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-6 medium-6 cell">
+				<label>Choose Your Favorite</label>
+				<input type="radio" name="name-pokemon" value="Red" id="id-pokemonRed"><label for="id-pokemonRed">Radio 1</label>
+				<input type="radio" name="name-pokemon" value="Blue" id="id-pokemonBlue"><label for="id-pokemonBlue">Radio 2</label>
+				</div>
+				<div class="large-6 medium-6 cell">
+				<label>Check these out</label>
+				<input id="id-checkbox1" type="checkbox"><label for="id-checkbox1">Checkbox 1</label>
+				<input id="id-checkbox2" type="checkbox"><label for="id-checkbox2">Checkbox 2</label>
+				</div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">
+				<label>Textarea Label</label>
+				<textarea placeholder="small-12.cell"></textarea>
+				</div>
+			</div>
+			</form>
+		</div>
+
+		<div class="large-4 medium-4 cell">
+			<h5>Try one of these buttons:</h5>
+			<p><a href="#/simple-button" class="button">Simple Button</a><br/>
+			<a href="#/success-button" class="success button">Success Btn</a><br/>
+			<a href="#/alert-button" class="alert button">Alert Btn</a><br/>
+			<a href="#/secondary-button" class="secondary button">Secondary Btn</a></p>
+			<div class="callout">
+			<h5>So many components, girl!</h5>
+			<p>A whole kitchen sink of goodies comes with Automation. Check out the docs to see them all, along with details on making them your own.</p>
+			<a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Automation Docs</a>
+			</div>
+
+			<input class="class-for-testing" type="submit" value="done">
+		</div>
+
+		<div>
+			<select id="id-multi-select" class="multi-select" multiple>
+				<option value="v">Volvo</option>
+				<option value="s">Saab</option>
+				<option value="o">Opel</option>
+				<option value="a" selected>Audi</option>
+			</select>
+		</div>
+		
+		<div class="action-buttons">
+			<button id="add-element" class="hard-test" data-humanoids="basic-alert-via-data-attribute" onclick="setTimeout(function() { addElement(); }, 5000);">Add Item</button>
+			<button id="remove-element" onclick="setTimeout(function() { removeElement('#randomization-container > div'); }, 5000);">Remove Item</button>
+
+			<button id="show-basic-alert" onclick="setTimeout(function() { alert('Sorry Dave. I cannot let you do that.') }, 2500);">Basic Alert</button>
+			<button id="show-confirm-alert" onclick="setTimeout(function() { confirm('A confirm alert only shows an OK button.') }, 2500);">Confirm Alert</button>
+			<button id="show-prompt-alert" onclick="setTimeout(function() { 
+				addElement(prompt('A prompt has a box for inputting text. Enter something!', 'What you want to enter.'))
+			}, 2500);">Prompt Alert</button>
+			<button id="open-new-tab" onclick="openNewTestTab();">Open New Tab</button>
+		</div>
+
+		<div>
+			<h4>Elements in Various States</h4>
+			<button id="disabled-button" disabled>Disabled</button>
+			<button id="visible-button">Visible Enabled</button>
+			<button id="hidden-button" style="visibility: hidden">Rendered Not Visible</button>
+			<button id="non-displayed-button" style="display: none">Rendered Not Visible</button>
+		</div>
+			
+		<div id="randomization-container"></div>
+
+		
+
+		</div>
+
+		<table aria-label="this-is-an-aria-label" id="test-table" cellpadding="0" cellspacing="0" class="grid" style="margin-top: 17px;" data-table="data-table-sample-data">
+			<thead id="test-table-header" style="position: fixed; width: 1616px; background-color: rgb(251, 249, 244); height: 17px; margin-top: -17px;">
+			<tr>
+				<th class="hidden header" scope="col"><span>&nbsp;</span></th>
+				<th scope="col" class="header" style="width: 309px;"><span>Company</span></th>
+				<th scope="col" class="header" style="width: 138px;"><span>Pay Group</span></th>
+				<th class="{sorter: 'alphanumeric'} header" scope="col" style="width: 146px;"><span>Employee #</span></th>
+				<th class="{sorter: 'text'} header" scope="col" style="width: 139px;"><span>First Name</span></th>
+				<th class="{sorter: 'text'} header" scope="col" style="width: 159px;"><span>Middle Name</span></th>
+				<th class="{sorter: 'text'} header headerSortDown" scope="col" style="width: 138px;"><span>Last Name</span></th>
+				<th scope="col" class="header" style="width: 123px;"><span>SSN</span></th>
+				<th scope="col" class="header" style="width: 102px;"><span>Status</span></th>
+				<th scope="col" class="header" style="width: 114px;"><span>Division</span></th>
+				<th class="lastCol header" scope="col" style="width: 148px;"><span>Department</span></th>
+			</tr>
+			</thead>
+			<tbody id="test-table-body">
+
+
+
+
+
+
+			<tr onclick="__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$0')" class="even">
+				<td class="hidden"><a href="javascript:__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$0')">Select</a></td>
+				<td>
+					Test Automation Acct -Do Not Use
+				</td>
+				<td>
+					Weekly
+				</td>
+				<td class="{sorter: 'alphanumeric'}">
+					5
+				</td>
+				<td class="{sorter: 'text'}">
+					AUTOMATION
+				</td>
+				<td class="{sorter: 'text'}">
+				</td>
+				<td class="{sorter: 'text'}">
+					EMPLOYEE
+				</td>
+				<td>
+					XXX-XX-3822
+				</td>
+				<td>
+					A
+				</td>
+				<td><span>&nbsp;</span></td>
+				<td class="lastCol"><span>&nbsp;</span></td>
+			</tr><tr class="alt odd" onclick="__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$1')">
+				<td class="hidden"><a href="javascript:__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$1')">Select</a></td>
+				<td>
+					Test Automation Acct -Do Not Use
+				</td>
+				<td>
+					Weekly
+				</td>
+				<td class="{sorter: 'alphanumeric'}">
+					4
+				</td>
+				<td class="{sorter: 'text'}">
+					Employee
+				</td>
+				<td class="{sorter: 'text'}">
+					Number
+				</td>
+				<td class="{sorter: 'text'}">
+					Four
+				</td>
+				<td>
+					XXX-XX-6635
+				</td>
+				<td>
+					A
+				</td>
+				<td><span>&nbsp;</span></td>
+				<td class="lastCol"><span>&nbsp;</span></td>
+			</tr><tr onclick="__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$2')" class="even">
+				<td class="hidden"><a href="javascript:__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$2')">Select</a></td>
+				<td>
+					Test Automation Acct -Do Not Use
+				</td>
+				<td>
+					Weekly
+				</td>
+				<td class="{sorter: 'alphanumeric'}">
+					14
+				</td>
+				<td class="{sorter: 'text'}">
+					EMPLOYEE
+				</td>
+				<td class="{sorter: 'text'}">
+				</td>
+				<td class="{sorter: 'text'}">
+					FOURTEEN
+				</td>
+				<td>
+					XXX-XX-8661
+				</td>
+				<td>
+					A
+				</td>
+				<td><span>&nbsp;</span></td>
+				<td class="lastCol"><span>&nbsp;</span></td>
+			</tr><tr class="alt odd selected" onclick="__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$3')">
+				<td class="hidden"><a href="javascript:__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$3')">Select</a></td>
+				<td>
+					Test Automation Acct -Do Not Use
+				</td>
+				<td>
+					Weekly
+				</td>
+				<td class="{sorter: 'alphanumeric'}">
+					1
+				</td>
+				<td class="{sorter: 'text'}">
+					Employee
+				</td>
+				<td class="{sorter: 'text'}">
+				</td>
+				<td class="{sorter: 'text'}">
+					One
+				</td>
+				<td>
+					XXX-XX-1648
+				</td>
+				<td>
+					A
+				</td>
+				<td><span>&nbsp;</span></td>
+				<td class="lastCol"><span>&nbsp;</span></td>
+			</tr><tr onclick="__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$4')" class="even">
+				<td class="hidden"><a href="javascript:__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$4')">Select</a></td>
+				<td>
+					Test Automation Acct -Do Not Use
+				</td>
+				<td>
+					Weekly
+				</td>
+				<td class="{sorter: 'alphanumeric'}">
+					3
+				</td>
+				<td class="{sorter: 'text'}">
+					Employee
+				</td>
+				<td class="{sorter: 'text'}">
+				</td>
+				<td class="{sorter: 'text'}">
+					Three
+				</td>
+				<td>
+					XXX-XX-4151
+				</td>
+				<td>
+					A
+				</td>
+				<td><span>&nbsp;</span></td>
+				<td class="lastCol"><span>&nbsp;</span></td>
+			</tr><tr id="ctl00_DefaultContent_employeeList_EmployeeListGridView_Selected" class="alt odd" onclick="__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$5')">
+				<td class="hidden"><a href="javascript:__doPostBack('ctl00$DefaultContent$employeeList$EmployeeListGridView','Select$5')">Select</a></td>
+				<td>
+					Test Automation Acct -Do Not Use
+				</td>
+				<td>
+					Weekly
+				</td>
+				<td class="{sorter: 'alphanumeric'}">
+					2
+				</td>
+				<td class="{sorter: 'text'}">
+					Employee
+				</td>
+				<td class="{sorter: 'text'}">
+				</td>
+				<td class="{sorter: 'text'}">
+					Two
+				</td>
+				<td>
+					XXX-XX-1760
+				</td>
+				<td>
+					A
+				</td>
+				<td><span>&nbsp;</span></td>
+				<td class="lastCol"><span>&nbsp;</span></td>
+			</tr><tr id="headerRuler" class="hidden" style="visibility: hidden;"><td class="hidden">____&nbsp;</td><td>____Company</td><td>____Pay Group</td><td>____Employee #</td><td>____First Name</td><td>____Middle Name</td><td>____Last Name</td><td>____SSN</td><td>____Status</td><td>____Division</td><td>____Department</td></tr></tbody>
+		</table>
+	</div>
+	
+	<div>
+		<table id="table-with-no-headers" data-html5-table="data-table-with-no-headers">
+			<caption>Table Caption</caption>
+			<tfoot>
+			<tr>
+				<th>Table Footer 1</th>
+				<th>Table Footer 2</th>
+				<th>Table Footer 3</th>
+				<th>Table Footer 4</th>
+				<th>Table Footer 5</th>
+			</tr>
+			</tfoot>
+			<tbody>
+			<tr>
+				<td>Table Cell 1</td>
+				<td>Table Cell 2</td>
+				<td>Table Cell 3</td>
+				<td>Table Cell 4</td>
+				<td>Table Cell 5</td>
+			</tr>
+			<tr>
+				<td>Table Cell 1</td>
+				<td>Table Cell 2</td>
+				<td>Table Cell 3</td>
+				<td>Table Cell 4</td>
+				<td>Table Cell 5</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<main role="main">
+		<section id="text">
+
+			<article id="text__tables" data-html5-table="data-table-with-headers">
+				<header><h1>Tabular data</h1></header>
+				<table id="Table-Caption">
+					<caption>Table Caption</caption>
+					<thead>
+					<tr>
+						<th id="Table-Heading-1">Table Heading 1</th>
+						<th id="Table-Heading-2">Table Heading 2</th>
+						<th id="Table-Heading-3">Table Heading 3</th>
+						<th id="Table-Heading-4">Table Heading 4</th>
+						<th id="Table-Heading-5">Table Heading 5</th>
+					</tr>
+					</thead>
+					<tfoot>
+					<tr>
+						<th id="Table-Footer-4.0">Table Footer 4.0</th>
+						<th id="Table-Footer-4.1">Table Footer 4.1</th>
+						<th id="Table-Footer-4.2">Table Footer 4.2</th>
+						<th id="Table-Footer-4.3">Table Footer 4.3</th>
+						<th id="Table-Footer-4.4">Table Footer 4.4</th>
+					</tr>
+					</tfoot>
+					<tbody>
+					<tr>
+						<td id="Table-Cell-0.0">Table Cell 0.0</td>
+						<td id="Table-Cell-0.1">Table Cell 0.1</td>
+						<td id="Table-Cell-0.2">Table Cell 0.2</td>
+						<td id="Table-Cell-0.3">Table Cell 0.3</td>
+						<td id="Table-Cell-0.4">Table Cell 0.4</td>
+					</tr>
+					<tr>
+						<td id="Table-Cell-1.0">Table Cell 1.0</td>
+						<td id="Table-Cell-1.1">Table Cell 1.1</td>
+						<td id="Table-Cell-1.2">Table Cell 1.2</td>
+						<td id="Table-Cell-1.3">Table Cell 1.3</td>
+						<td id="Table-Cell-1.4">Table Cell 1.4</td>
+					</tr>
+					<tr>
+						<td id="Table-Cell-2.0">Table Cell 2.0</td>
+						<td id="Table-Cell-2.1">Table Cell 2.1</td>
+						<td id="Table-Cell-2.2">Table Cell 2.2</td>
+						<td id="Table-Cell-2.3">Table Cell 2.3</td>
+						<td id="Table-Cell-2.4">Table Cell 2.4</td>
+					</tr>
+					<tr>
+						<td id="Table-Cell-3.0">Table Cell 3.0</td>
+						<td id="Table-Cell-3.1">Table Cell 3.1</td>
+						<td id="Table-Cell-3.2">Table Cell 3.2</td>
+						<td id="Table-Cell-3.3">Table Cell 3.3</td>
+						<td id="Table-Cell-3.4">Table Cell 3.4</td>
+					</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
+
+
+		<section id="forms">
+			<header><h1>Form elements</h1></header>
+			<form>
+				<fieldset id="forms__input">
+					<legend>Input fields</legend>
+					<p>
+						<label for="input__text">Text Input</label>
+						<input id="input__text" type="text" placeholder="Text Input">
+					</p>
+					<p>
+						<label for="input__password">Password</label>
+						<input id="input__password" type="password" placeholder="Type your Password">
+					</p>
+					<p>
+						<label for="input__webaddress">Web Address</label>
+						<input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+					</p>
+					<p>
+						<label for="input__emailaddress">Email Address</label>
+						<input id="input__emailaddress" type="email" placeholder="name@email.com">
+					</p>
+					<p>
+						<label for="input__phone">Phone Number</label>
+						<input id="input__phone" type="tel" placeholder="(999) 999-9999">
+					</p>
+					<p>
+						<label for="input__search">Search</label>
+						<input id="input__search" type="search" placeholder="Enter Search Term">
+					</p>
+					<p>
+						<label for="input__text2">Number Input</label>
+						<input id="input__text2" type="number" placeholder="Enter a Number">
+					</p>
+					<p>
+						<label for="input__text3" class="error">Error</label>
+						<input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+					</p>
+					<p>
+						<label for="input__text4" class="valid">Valid</label>
+						<input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+					</p>
+				</fieldset>
+				<fieldset id="forms__select">
+					<legend>Select menus</legend>
+					<p>
+						<label for="select">Select</label>
+						<select id="select">
+							<optgroup label="Option Group">
+								<option>Option One</option>
+								<option>Option Two</option>
+								<option>Option Three</option>
+							</optgroup>
+						</select>
+					</p>
+				</fieldset>
+				<fieldset id="forms__checkbox">
+					<legend>Checkboxes</legend>
+					<ul class="list list--bare">
+						<li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+						<li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+						<li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+					</ul>
+				</fieldset>
+				<fieldset id="forms__radio">
+					<legend>Radio buttons</legend>
+					<ul class="list list--bare">
+						<li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
+						<li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
+						<li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+					</ul>
+				</fieldset>
+				<fieldset id="forms__textareas">
+					<legend>Textareas</legend>
+					<p>
+						<label for="textarea">Textarea</label>
+						<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+					</p>
+				</fieldset>
+				<fieldset id="forms__html5">
+					<legend>HTML5 inputs</legend>
+					<p>
+						<label for="ic">Color input</label>
+						<input type="color" id="ic" value="#000000">
+					</p>
+					<p>
+						<label for="in">Number input</label>
+						<input type="number" id="in" min="0" max="10" value="5">
+					</p>
+					<p>
+						<label for="ir">Range input</label>
+						<input type="range" id="ir" value="10">
+					</p>
+					<p>
+						<label for="idd">Date input</label>
+						<input type="date" id="idd" value="1970-01-01">
+					</p>
+					<p>
+						<label for="idm">Month input</label>
+						<input type="month" id="idm" value="1970-01">
+					</p>
+					<p>
+						<label for="idw">Week input</label>
+						<input type="week" id="idw" value="1970-W01">
+					</p>
+					<p>
+						<label for="idt">Datetime input</label>
+						<input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+					</p>
+					<p>
+						<label for="idtl">Datetime-local input</label>
+						<input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+					</p>
+				</fieldset>
+				<fieldset id="forms__action">
+					<legend>Action buttons</legend>
+					<p>
+						<input type="submit" value="a s u b m i t b u t t o n">
+						<input type="button" value="<input type=button>">
+						<input type="reset" value="<input type=reset>">
+						<input type="submit" value="<input disabled>" disabled>
+					</p>
+					<p>
+						<button type="submit">a s u b m i t b u t t o n</button>
+						<button type="button">&lt;button type=button&gt;</button>
+						<button type="reset">&lt;button type=reset&gt;</button>
+						<button type="button" disabled>&lt;button disabled&gt;</button>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	</body>
+</html>
