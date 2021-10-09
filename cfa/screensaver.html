@@ -97,7 +97,7 @@
 
         var displayText = "Starting Soon";
         if (location.hash) {
-            displayText = location.hash.substr(1);
+            displayText = decodeURI(location.hash.substr(1));
         }
 
         document.getElementById("display-text").innerHTML = displayText;
