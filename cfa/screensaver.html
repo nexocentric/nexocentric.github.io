@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 - Code for America Congress Brigade</title>
+    <style>
+        #first-blob-container {
+            position: absolute;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #second-blob-container {
+            position: absolute;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #first-blob {
+            width: 85%;
+            height: 85%;
+            animation: clockwise 86s linear infinite;
+        }
+        @keyframes clockwise {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #second-blob {
+            width: 70%;
+            height: 70%;
+            animation: counterclockwise 95s linear infinite;
+        }
+        @keyframes counterclockwise {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        .content {
+            left:50%;
+            padding: 0;
+            height: 50vh;
+            position: fixed;
+            text-align: center;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+        h1 {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+        }
+
+        .logo {
+            width: 35vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="first-blob-container" class="blob"></div>
+    <div id="second-blob-container" class="blob"></div>
+    <div class="content">
+        <img class="logo" src="./logo.png">
+        <h1 id="display-text"></h1>
+    </div>
+
+    <script>
+        var blobs = Array.from({length: 10}, (_, i) => i + 1);
+        var firstBlobPath = blobs[blobs.length * Math.random() | 0];
+        firstBlobPath = "./blobs/" + ('00' + firstBlobPath).slice(-2) + ".svg";
+        var secondBlobPath = blobs[blobs.length * Math.random() | 0];
+        secondBlobPath = "./blobs/" + ('00' + secondBlobPath).slice(-2) + ".svg";
+
+        var firstBlob = document.getElementById("first-blob-container");
+        firstBlob.innerHTML = "<object id='first-blob' data='" + firstBlobPath + "' type='image/svg+xml'></object>";
+
+        var secondBlob = document.getElementById("second-blob-container");
+        secondBlob.innerHTML = "<object id='second-blob' data='" + secondBlobPath + "' type='image/svg+xml'></object>";
+
+        var displayText = "Starting Soon";
+        if (location.hash) {
+            displayText = location.hash.substr(1);
+        }
+
+        document.getElementById("display-text").innerHTML = displayText;
+    </script>
+</body>
+</html>
