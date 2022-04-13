@@ -15,7 +15,7 @@
     "array-unique": "^0.3.2",
     "arraybuffer.slice": "^0.0.7",
     "assign-symbols": "^1.0.0",
-    "async": "^1.5.2",
+    "async": "^3.2.2",
     "async-each": "^1.0.2",
     "async-each-series": "^0.1.1",
     "async-limiter": "^1.0.0",
